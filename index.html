@@ -5,26 +5,27 @@
     <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Foorumi</title>
 </head>
 
 <body>
     <header>
-        <h1>Foorumi</h1>
         <nav>
-            <ul>
-                <li>Forums</li>
-            </ul>
-            <ul>
-                <li>Asetukset</li>
-                <li>Profiili</li>
-            </ul>
+            <h1>Foorumi</h1>
         </nav>
+        <nav>
+
+            <a>Asetukset</a>
+            <a>Profiili</a>
+
+        </nav>
+
+
     </header>
     <main>
         <aside>
             <section>
-                <h3>sivu palkki nopeat etsintä työkalut</h3>
+                <h2>sivu palkki nopeat etsintä työkalut</h2>
                 <ul>
                     <li><a>Uusimmat ensin</a></li>
                     <li><a>Tykätyin ensin</a></li>
@@ -32,43 +33,71 @@
                 </ul>
             </section>
             <section>
-                <h3>sivu palkki etsintä työkalut</h3>
+                <h2>sivu palkki etsintä työkalut</h2>
                 <label for="keywords">Avainsanat</label>
                 <input id="keywords" type="text">
                 <button>Etsi</button>
             </section>
         </aside>
         <article>
-            <h2>Postaukset</h2>
-            <nav>
-                <ul>
-                    <li><button>1</button></li>
-                    <li><button>2</button></li>
-                    <li><button>3</button></li>
-                    <li><button>...</button></li>
-                    <li><button>200</button></li>
-                    <li><button>Seuraava</button></li>
-                </ul>
-            </nav>
-            <section>
-                <h3>Minun postaukseni!</h3>
-            </section>
-            <section>
-                <h3>Minun toinen postaukseni</h3>
-            </section>
-            <section>
-                <h3>Minun kolmas postaukseni</h3>
-            </section>
-            <nav>
-                <ul>
-                    <li><button>1</button></li>
-                    <li><button>2</button></li>
-                    <li><button>3</button></li>
-                    <li><button>...</button></li>
-                    <li><button>200</button></li>
-                    <li><button>Seuraava</button></li>
-                </ul>
-            </nav>
+            <div class="posts-top">
+                <h2 class="posts-title">Postaukset</h2>
+                <nav class="picker-bar">
+                    <ul class="page-picker">
+                        <li><button>1</button></li>
+                        <li><button>2</button></li>
+                        <li><button>3</button></li>
+                        <li><button>...</button></li>
+                        <li><button>200</button></li>
+                        <li><button>Seuraava</button></li>
+                    </ul>
+                    <button>Luo uusi postaus</button>
+                </nav>
+            </div>
+
+            <div class="post-container">
+                <section class="post">
+                    <h3>Minun postaukseni!</h3>
+                </section>
+                <section class="post">
+                    <h3>Minun toinen postaukseni</h3>
+                </section>
+                <section class="post">
+                    <h3>Minun kolmas postaukseni</h3>
+                </section>
+                <section class="post">
+                    <h3>Minun postaukseni!</h3>
+                </section>
+                <section class="post">
+                    <h3>Minun toinen postaukseni</h3>
+                </section>
+                <section class="post">
+                    <h3>Minun kolmas postaukseni</h3>
+                </section>
+                <section class="post">
+                    <h3>Minun postaukseni!</h3>
+                </section>
+                <section class="post">
+                    <h3>Minun toinen postaukseni</h3>
+                </section>
+                <section class="post">
+                    <h3>Minun kolmas postaukseni</h3>
+                </section>
+            </div>
+
+            <div class="posts-top">
+                <nav>
+                    <ul class="page-picker">
+                        <li><button>1</button></li>
+                        <li><button>2</button></li>
+                        <li><button>3</button></li>
+                        <li><button>...</button></li>
+                        <li><button>200</button></li>
+                        <li><button>Seuraava</button></li>
+                    </ul>
+                </nav>
+            </div>
+
         </article>
     </main>
     <footer>
