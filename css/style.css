@@ -1,5 +1,9 @@
-h1,h2,h3,h4,h5{
+h1,h2,h3,h4,h5,p{
     margin:0;
+}
+a{
+    color: inherit;     
+    text-decoration: none;
 }
 ul {
     padding:0;
@@ -21,7 +25,7 @@ header {
     min-height:4rem;
     color:#eef2fa;
 }
-main {
+.main-index {
     display : grid;
     grid-template-columns: 250px 1fr;
     gap: 1.5rem;
@@ -40,7 +44,7 @@ aside {
     padding:1rem;
     border: 1px solid rgb(135, 135, 135)
 }
-article {
+.posts-section{
     display:flex;
     flex-direction:column;
     background-color:#ffffff;
@@ -48,12 +52,12 @@ article {
     border-radius:0.5rem;
     border: 1px solid rgb(135, 135, 135)
 }
-article > :last-child{
+.posts-section > :last-child{
     margin-top:auto;
 }
 footer {
     margin-top:50px;
-    background-color:#193036;
+    background-color:#0f171a;
     min-height:80px;
 }
 .page-picker {
@@ -76,19 +80,29 @@ footer {
 .posts-top {
     padding-inline:1rem;
 }
-.post-container{
 
-}
 
-.post-container > :last-child{
-    border-bottom:2px black solid;
+a:has(> .post):last-of-type .post { 
+  border-bottom: 1px solid black;
 }
 .post {
-    border-top:2px black solid;
+    border-top:1px black solid;
+
     min-height:3rem;
     padding-inline:1rem;
     padding-top:0.5rem;
+    display:flex;
+    max-height:200px;
+    justify-content:space-between;
 }
+
+.post-thumbnail-image{
+    max-width: 200px;
+    max-height:200px;
+    height: auto;
+    width:auto;
+}
+
 
 header nav {
     color:white;
@@ -96,4 +110,120 @@ header nav {
     justify-content: space-between;
     align-items: center;
     gap:1.5rem;
+}
+
+.main-profile {
+    display : grid;
+    max-width: 900px;
+    margin-inline:auto;
+    align-items: start;
+    color:#0c241f;
+}
+.profile-section{
+    display:flex;
+    flex-direction:column;
+    background-color:#ffffff;
+    min-height: 1200px;
+    border: 1px solid rgb(135, 135, 135)
+}
+
+.profile-header {
+    display: flex;
+}
+
+.profile-header-content {
+    flex: 1;
+    contain: size;            /* height comes from the picture only */
+    display: flex;
+    flex-direction: column;   /* h1 on top, text below */
+    overflow: hidden;
+}
+    
+
+
+.profile-header-text{
+    flex: 1;                  /* grabs the remaining height under the h1 */
+    min-height: 0;            /* allows it to be smaller than its content */
+    display: flex;
+    flex-direction: column;   /* items go top to bottom... */
+    flex-wrap: wrap;          /* ...then wrap into a new column to the right */
+    align-content: flex-start;
+    align-items: flex-start;
+    overflow-x: auto;
+
+}
+.profile-header-cell{
+    display: flex;
+    align-items:flex-start;
+    margin-right:1rem;
+    padding:0;
+    gap:0.25rem;
+}
+
+.profile-picture{
+    height:200px;
+    width:200px;
+}
+
+.profile-main-content{
+    background-color:#f2f2f2;
+    height:1000px;
+}
+
+.profile-article{
+    margin:1rem;
+    background-color:white;
+    border-radius:1rem;
+    padding:1rem;
+    max-height: 500px;
+    overflow-y: auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.me-section-image{
+    max-width: 100%;
+    height: auto;
+}
+
+.post-header{
+    display:flex;
+    justify-content:space-between;
+    padding:1rem;
+}
+
+.post-image{
+    max-width:500px;
+    max-height:500px;
+    height:auto;
+    width:auto;
+    border-radius:1rem;
+}
+.post-content{
+
+}
+.button {
+    display: inline-block;
+    padding: 0.5rem 0.5rem;
+    border: 1px solid black;
+    background: white;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.post-top-content{
+    display:flex;
+
+}
+
+.post-profile-picture{
+    max-width:50px;
+    max-height:50px;
+    height: auto;
+    width:auto;
+}
+
+.comment-section{
+    padding:2rem;
+    background-color:#f2f2f2;
 }

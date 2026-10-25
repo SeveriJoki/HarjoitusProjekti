@@ -11,35 +11,37 @@
 <body>
     <header>
         <nav>
-            <h1>Foorumi</h1>
+            <h1>
+                <a href="index.html">Foorumi</a>
+            </h1>
         </nav>
         <nav>
 
-            <a>Asetukset</a>
-            <a>Profiili</a>
+            <a href="index.html">Asetukset</a>
+            <a href="profile.html">Profiili</a>
 
         </nav>
 
 
     </header>
-    <main>
+    <main class="main-index">
         <aside>
-            <section>
+            <article>
                 <h2>sivu palkki nopeat etsintä työkalut</h2>
                 <ul>
                     <li><a>Uusimmat ensin</a></li>
                     <li><a>Tykätyin ensin</a></li>
                     <li><a>Aktiivisin ensin</a></li>
                 </ul>
-            </section>
-            <section>
+            </article>
+            <article>
                 <h2>sivu palkki etsintä työkalut</h2>
                 <label for="keywords">Avainsanat</label>
                 <input id="keywords" type="text">
                 <button>Etsi</button>
-            </section>
+            </article>
         </aside>
-        <article>
+        <section class="posts-section">
             <div class="posts-top">
                 <h2 class="posts-title">Postaukset</h2>
                 <nav class="picker-bar">
@@ -56,33 +58,42 @@
             </div>
 
             <div class="post-container">
-                <section class="post">
-                    <h3>Minun postaukseni!</h3>
-                </section>
-                <section class="post">
-                    <h3>Minun toinen postaukseni</h3>
-                </section>
-                <section class="post">
-                    <h3>Minun kolmas postaukseni</h3>
-                </section>
-                <section class="post">
-                    <h3>Minun postaukseni!</h3>
-                </section>
-                <section class="post">
-                    <h3>Minun toinen postaukseni</h3>
-                </section>
-                <section class="post">
-                    <h3>Minun kolmas postaukseni</h3>
-                </section>
-                <section class="post">
-                    <h3>Minun postaukseni!</h3>
-                </section>
-                <section class="post">
-                    <h3>Minun toinen postaukseni</h3>
-                </section>
-                <section class="post">
-                    <h3>Minun kolmas postaukseni</h3>
-                </section>
+                <a href="post.html">
+                    <article class="post">
+                        <div class="post-text">
+                            <h3>Kävin täällä!</h3>
+                            <p>Oli erittäin hieno matka! Sain paljon upeita kuvia ja tuli kylmäkin.</p>
+                        </div>
+                        <div class="post-img">
+                            <img src="images/post_images/mountains.jpg" class="post-thumbnail-image" alt="">
+                        </div>
+
+                    </article>
+                </a>
+                <a href="post.html">
+                    <article class="post">
+                        <div class="post-text">
+                            <h3>Moi tämä on minun postaukseni!</h3>
+                            <p>Oli erittäin hieno matka! Sain paljon upeita kuvia ja tuli kylmäkin.</p>
+                        </div>
+                        <div class="post-img">
+                            <img src="images/post_images/mountains.jpg" class="post-thumbnail-image" alt="">
+                        </div>
+
+                    </article>
+                </a>
+                <a href="post.html">
+                    <article class="post">
+                        <div class="post-text">
+                            <h3>Nyt on erinomainen sää kokkolassa</h3>
+                            <p>Hirmu myrskyjä luvattu ja valtavasti tuulta. Mainio aika käydä pihalla.</p>
+                        </div>
+                        <div class="post-img">
+                            <img src="images/post_images/storm.jpg" class="post-thumbnail-image" alt="">
+                        </div>
+
+                    </article>
+                </a>
             </div>
 
             <div class="posts-top">
@@ -98,7 +109,7 @@
                 </nav>
             </div>
 
-        </article>
+        </section>
     </main>
     <footer>
 
