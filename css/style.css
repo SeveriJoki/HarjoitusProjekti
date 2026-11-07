@@ -14,10 +14,13 @@ body{
     padding:0px;
     margin:0px;
     background-color:#e9f6f7;
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sana-serif;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
     line-height:1.6;
 }
 header {
+    position:sticky;
+    top:0;
+
     display:flex;
     justify-content: space-between;
     background-color:#193036;
@@ -25,6 +28,8 @@ header {
     padding-inline: 3rem;
     min-height:4rem;
     color:#eef2fa;
+
+
 }
 .main-index {
     display : grid;
@@ -38,28 +43,34 @@ header {
 
 }
 
-aside {
-    background-color:#ffffff;
-
-    border-radius:0.5rem;
+.sidebar {
+    box-sizing:border-box;
     padding:1rem;
-    border: 1px solid rgb(135, 135, 135)
+    position:fixed;
+    top:4rem;
+    left:0;
+    bottom:0;
+    width: max(220px, calc((100vw - 900px) / 2));
+    z-index:1;
+    background:white;
+
+
 }
 .posts-section{
     display:flex;
     flex-direction:column;
     background-color:#ffffff;
     min-height: 1200px;
-    border-radius:0.5rem;
     border: 1px solid rgb(135, 135, 135);
 }
 .posts-section > :last-child{
     margin-top:auto;
 }
 footer {
-    margin-top:50px;
+    position:relative;
     background-color:#0f171a;
     min-height:80px;
+    z-index:100;
 }
 .page-picker {
     display:flex;
@@ -142,11 +153,9 @@ header nav {
     background-color:rgb(29, 111, 96);
 }
 
-.main-profile {
-    display : grid;
+.main-content {
     max-width: 900px;
     margin-inline:auto;
-    align-items: start;
     color:#0c241f;
 }
 .profile-section{
