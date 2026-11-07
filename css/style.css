@@ -9,6 +9,7 @@ ul {
     padding:0;
     list-style:none;
 }
+
 body{
     padding:0px;
     margin:0px;
@@ -50,7 +51,7 @@ aside {
     background-color:#ffffff;
     min-height: 1200px;
     border-radius:0.5rem;
-    border: 1px solid rgb(135, 135, 135)
+    border: 1px solid rgb(135, 135, 135);
 }
 .posts-section > :last-child{
     margin-top:auto;
@@ -82,20 +83,28 @@ footer {
 }
 
 
-a:has(> .post):last-of-type .post { 
-  border-bottom: 1px solid black;
+.post-container{
+    display:flex;
+    gap:1rem;
+    flex-direction:column;
 }
 .post {
-    border-top:1px black solid;
-
+    border:1px solid rgb(200,200,200);
+    border-radius:1rem;
     min-height:3rem;
     padding-inline:1rem;
     padding-top:0.5rem;
     display:flex;
     max-height:200px;
     justify-content:space-between;
+    margin: 0 1rem;
 }
-
+hr{
+    border:none;
+    height:1px;
+    background:rgb(200,200,200);
+    margin:0 1rem;
+}
 .post-thumbnail-image{
     max-width: 200px;
     max-height:200px;
@@ -103,13 +112,34 @@ a:has(> .post):last-of-type .post {
     width:auto;
 }
 
+.post:hover{
+    background-color: rgb(240,240,240);
+}
+
 
 header nav {
-    color:white;
-    display:flex;
+    color: white;
+    display: flex;
     justify-content: space-between;
+    align-items: stretch;
+}
+
+.navbar-button{
+    display: flex;
     align-items: center;
-    gap:1.5rem;
+    padding: 0 1rem;
+}
+
+.hover-button:hover{
+    background-color:rgb(29, 111, 96);
+}
+
+.selected{
+    text-decoration:underline;
+    text-decoration-color:rgb(244, 168, 46);
+    text-decoration-thickness: 2px;
+    text-underline-offset:6px;
+    background-color:rgb(29, 111, 96);
 }
 
 .main-profile {
