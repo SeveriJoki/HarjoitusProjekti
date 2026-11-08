@@ -25,11 +25,9 @@ body{
     justify-content: space-between;
     background-color:#193036;
     margin:0;
-    padding-inline: 3rem;
+    padding-inline: 1rem;
     min-height:4rem;
     color:#eef2fa;
-
-
 }
 .main-index {
     display : grid;
@@ -53,9 +51,12 @@ body{
     width: max(220px, calc((100vw - 900px) / 2));
     z-index:1;
     background:white;
-
-
 }
+.sidebar.closed{
+    transform: translateX(-100%);
+    visibility: hidden;
+}
+
 .posts-section{
     display:flex;
     flex-direction:column;
@@ -133,6 +134,19 @@ header nav {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
+}
+
+.menu-icon {
+    width: 32px;
+}
+
+.sidebar-button{
+    background-color:inherit;
+    border:none;
+}
+
+.sidebar-button:hover{
+    cursor:pointer;
 }
 
 .navbar-button{
