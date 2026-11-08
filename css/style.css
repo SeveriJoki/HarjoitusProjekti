@@ -51,6 +51,7 @@ body{
     width: max(220px, calc((100vw - 900px) / 2));
     z-index:1;
     background:white;
+    border-right:solid 1px rgb(200, 200, 200);
 }
 .sidebar.closed{
     transform: translateX(-100%);
@@ -60,7 +61,7 @@ body{
 .posts-section{
     display:flex;
     flex-direction:column;
-    background-color:#ffffff;
+    background-color:#fafafa;
     min-height: 1200px;
     border: 1px solid rgb(135, 135, 135);
 }
@@ -102,6 +103,7 @@ footer {
 }
 .post {
     border:1px solid rgb(225,225,225);
+    background-color:white;
     border-radius:10px;
     min-height:3rem;
     padding-inline:1rem;
