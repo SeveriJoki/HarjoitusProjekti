@@ -21,7 +21,25 @@
         </nav>
     </header>
     <main class="main-content">
+        <section class="create-post-section">
+            <div class="create-post-top">
+                <a href="index.html" class="back-btn hover-button"><img src="images/icons/back.png" alt="" width="24" height="24"></a>
+                <h2>Uuden postauksen luonti</h2>
+            </div>
 
+            <form action="/submit" method="post" class="create-post-form">
+                <label for="title">Postauksen otsikko</label>
+                <input type="text" id="title" name="post-title" required>
+                    
+                <label for="message">Postauksen teksti</label>
+                <textarea id="message" name="message" rows="8"></textarea>
+
+                <label for="file">Postauksen tiedosto</label>
+                <input type="file" id="file" name="file">
+
+                <button type="submit" class="btn hover-button-alt">Luo postaus</button>
+            </form>
+        </section>
     </main>
     <footer>
 

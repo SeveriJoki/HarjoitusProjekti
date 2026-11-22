@@ -1,4 +1,4 @@
-h1,h2,h3,h4,h5,p{
+h1,h2,h3,h4,h5,p, img{
     margin:0;
 }
 a{
@@ -16,6 +16,10 @@ body{
     background-color:#e9f6f7;
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
     line-height:1.6;
+}
+
+label {
+    margin-top:1rem;
 }
 .body-header {
     position:sticky;
@@ -61,6 +65,23 @@ body{
     transition: transform 0.25s ease, visibility 0s linear 0.25s;
     visibility: hidden;
 }
+.create-post-section{
+    background-color:#fafafa;
+    min-height: 1200px;
+    border: 1px solid rgb(135, 135, 135);
+}
+.create-post-top{
+    display:flex;
+    flex-direction:row;
+    gap:1rem;
+}
+
+.create-post-form{
+    display:flex;
+    flex-direction:column;
+    gap:0.5rem;
+    padding:1rem 4rem;
+}
 
 .posts-section{
     display:flex;
@@ -72,6 +93,34 @@ body{
 .posts-section > :last-child{
     margin-top:auto;
 }
+
+.btn {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background-color:rgb(29, 111, 96);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    max-width:200px;
+}
+
+.back-btn {
+    display: inline-block;
+    padding: 1rem 1rem;
+    background-color:rgb(255, 255, 255);
+    color: white;
+    text-decoration: none;
+    border-radius: 100px;
+    border: 1px solid rgb(177, 177, 177);
+    cursor: pointer;
+}
+
+.back-btn img{
+    display:block;
+}
+
+
 footer {
     position:relative;
     background-color:#0f171a;
@@ -165,6 +214,10 @@ header nav {
 
 .hover-button:hover{
     background-color:rgb(29, 111, 96);
+}
+
+.hover-button-alt:hover{
+    background-color:rgb(28, 66, 59);
 }
 
 .selected{
@@ -279,15 +332,7 @@ header nav {
     border-radius:10px;
 }
 
-.button {
-    display: inline-block;
-    padding: 0.5rem 0.5rem;
-    border: 1px solid black;
-    background: white;
-    color: inherit;
-    text-decoration: none;
-    cursor: pointer;
-}
+
 
 .post-top-content{
     display:flex;
