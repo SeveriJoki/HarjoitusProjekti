@@ -8,7 +8,7 @@
     <title>Foorumi</title>
 </head>
 
-<aside class="sidebar">
+<aside class="sidebar closed" id="sidebar">
     <article>
         <h2>sivu palkki nopeat etsintä työkalut</h2>
         <ul>
@@ -28,8 +28,8 @@
 <body>
     <header class="body-header">
         <nav>
-            <button class="navbar-button sidebar-button">
-                <img src="images/icons/menu.png" alt="Sidebar opening button" class="menu-icon" width="20" height="20">
+            <button class="navbar-button sidebar-button hover-button" id="sidebar-toggle-btn">
+                <img src="images/icons/menu.png" alt="Sidebar opening button" class="menu-icon" width="20" height="20" id="sidebar-toggle-icon">
             </button>
 
             <h1 class="navbar-button">
@@ -117,6 +117,8 @@
     <footer>
 
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
