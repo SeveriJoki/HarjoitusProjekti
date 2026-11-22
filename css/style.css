@@ -9,6 +9,24 @@ ul {
     padding:0;
     list-style:none;
 }
+table{
+    border-collapse:collapse;
+}
+td{
+    text-align:center;
+    vertical-align:center;
+    border:1px solid black;
+}
+th{
+    border:1px solid black;
+    font-weight:bold;
+}
+
+.highlight{
+    background-color:greenyellow
+}
+
+
 
 body{
     padding:0px;
@@ -80,7 +98,7 @@ label {
     display:flex;
     flex-direction:column;
     gap:0.5rem;
-    padding:1rem 4rem;
+    padding:1rem 5rem;
 }
 
 .posts-section{
